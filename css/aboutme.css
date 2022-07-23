@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
 body {
+	text-align: center;
 	background-color: #000;
 
-	font-family: "Poppins",sans-serif;
-	color: #9aa6af;
+	font-family: 'Jost', sans-serif;
+
 	text-rendering: optimizelegibility;
 
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -16,10 +18,11 @@ body {
 	-ms-tap-highlight-color:rgba(0,0,0,0);
 	-ms-text-size-adjust: none;
 	-ms-font-smoothing: antialiased;
+	height: 100%
 }
 a {text-decoration: none;}
 
-.container {
+.maincontainer {
 	overflow: hidden;
 	background-color: #000;
 
@@ -64,24 +67,26 @@ header h1 {
 }
 .burger.open li {background-color: #d9dde1;}
 
-nav {
+nav.slide {
 	position: absolute;
 	top: 0;
 	right: 5px;
 }
-nav li {
+li.topnav {
 	float: left;
 
 	display: inline-block;
 }
-nav li a.navbar {
+a.topnav {
 	font-size: 11px;
 	color: #9aa6af;
 	padding: 24px 15px;
 
 	display: block;
 }
-nav li a.navbar:hover {color: #000;}
+a.topnav:hover {
+	color: #000;
+}
 
 
 
@@ -97,6 +102,17 @@ nav li a.navbar:hover {color: #000;}
 	background-color: #ffffff;}
 .body-section {background-color: #f4f5f6;}
 .footer-section {background-color: #dadee1;}
+.placefiller {
+	text-align: center;
+	font-size: 20px;
+	border: 1px dashed rgba(190, 196, 202, 0.5);
+}
+.header-section .placefiller {line-height: 300px;}
+.body-section .placefiller {line-height: 900px;}
+.footer-section .placefiller {
+	line-height: 200px;
+	border: 1px dashed rgba(190, 196, 202, 0.9);
+}
 
 
 
@@ -130,20 +146,27 @@ header h1 {
 
 
 /*  Nav Drawer Layout  */
-nav {position: relative;}
+.topnav {position: relative;}
 
-nav ul {
+nav.slide {
+	position: fixed;
+	top: 0;
+	right: 5px;
+}
+
+ul.topnav {
 	height: 100%;
 	overflow-y: auto;
 }
-nav li {
+li.topnav {
 	display: block;
 	float: none;
 }
-nav li a {
+a.topnav {
 	padding: 22px 25px;
 	letter-spacing: 3px;
 	font-size: 14px;
+	text-align: left;
 }
 nav li a.logo {
 	display: none;
@@ -152,12 +175,12 @@ nav li a.active {
 	color: #fff;
 	background-color: #141e23;
 }
-nav li a.navbar:hover {
+nav li a:hover {
 	color: #fff;
 	background-color: #19252c;
 }
-nav li:first-child a.navbar.active,
-nav li:first-child a.navbar:hover
+nav li:first-child a.active,
+nav li:first-child a:hover
 {border-radius: 10px 0 0 0;}
 
 .header-section {margin-top: 60px;}
@@ -480,6 +503,7 @@ li.bullets{
 
 		font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)))
 }
+
 a.contact:hover {
 	color: red;
 }
