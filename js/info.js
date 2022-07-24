@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("chemmenu");
+var acc = document.getElementsByClassName("mmenu");
 var i;
 
 for (i = 0; i < acc.length; i++) {

@@ -41,10 +41,10 @@ a {text-decoration: none;}
 header {
 	height: 60px;
 	position: relative;
-	background-color: #f3f5f6;
+	background-color: #734B5E;
 }
 header h1 {
-	color: #9aa6af;
+	color: #F7F7FF;
 	text-align: left;
 	font-size: 27px;
 	line-height: 60px;
@@ -82,7 +82,7 @@ li.topnav {
 }
 a.topnav {
 	font-size: 11px;
-	color: #9aa6af;
+	color: #F7F7FF;
 	padding: 24px 15px;
 
 	display: block;
@@ -102,8 +102,8 @@ a.topnav:hover {
 {padding: 20px;}
 
 .header-section {
-	background-color: #ffffff;}
-.body-section {background-color: #f4f5f6;}
+	background-color: #F7F7FF;}
+.body-section {background-color: #F7F7FF;}
 .footer-section {background-color: #dadee1;}
 .placefiller {
 	text-align: center;
@@ -372,21 +372,6 @@ img{
 	text-align: center;
 	margin: 10px 0 0 0;
 }
-.classsplit {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.classsplit:hover {
-  background-color: #777;
-}
 
 /* Style the tab content (and add height:100% for full page content) */
 .classcontent {
@@ -420,12 +405,13 @@ img{
 }
 
 button {
-  letter-spacing: 3px;
+  letter-spacing: px;
+  font-family: 'Jost', sans-serif;
   border: none;
-  padding: 10px;
+  padding: 5px;
   background-color: white;
-  color: #232c3d;
-  font-size: 18px;
+  color: #F7F7FF;
+  font-size: 24px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -443,11 +429,11 @@ button:hover {
 }
 
 button.activetab {
-  background-color: #BCCBE9;
+  background-color: #734B5E;
 }
 
 .subcontent.activetab {
-  background-color: #BCCBE9;
+  background-color: #734B5E;
 }
 
 p {
@@ -457,7 +443,7 @@ p {
 
 .subcontent {
   display: none;
-  padding: 10px 20px;
+
 }
 
 .subcontent.activetab {
@@ -470,8 +456,8 @@ p {
   }
 
   .left,.right [id='main']{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 }
 
@@ -480,7 +466,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #BCCBE9;
+  background: #f7f7ff;
   justify-content: center;
 }
 #Regular .tabss {
@@ -501,31 +487,38 @@ p {
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color:#f7f7ff;
+  ;
   transition: background 0.1s, color 0.1s;
 }
 .label:hover {
   background: #b8c3cb;
 }
 .label:active {
-  background: #cdcdf3;
+  background: #3B3D5C;
 }
 .input:focus + .label {
   z-index: 1;
 }
 .input:checked + .label {
-  background: #cdcdf3;
-  color: #000;
+  background: #3B3D5C;
+  color: #f7f7ff;
 }
 @media (min-width: 768px) {
   .label {
-    width: auto;
+    width: 33.333333%;
+    background: #8b9daa;
+  }
+  .tabss{
+    background: #8b9daa;
   }
 }
 .panel {
   display: none;
-  padding: 0px 30px 0px;
-  background: #cdcdf3;
+  padding: 0px 30px 20px;
+  background: #3B3D5C;
+  width: 100%;
+  color: #F7F7FF;
 }
 @media (min-width: 768px) {
   .panel {
@@ -554,7 +547,7 @@ p {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background: #bccbe9;
+  background: #8b9daa;
   background-clip: border-box;
   border: 1px solid transparent;
 }
@@ -653,7 +646,7 @@ p {
 }
 .nav-link.active {
   color: #000;
-  background-color: #bccbe9;
+  background-color: #8b9daa;
   border-color: #dee2e6 #dee2e6 transparent #dee2e6;
 }
 .nav-tabs .dropdown-menu {
@@ -668,7 +661,7 @@ p {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #7B8AA9;
+  background-color: #8b9daa;
   text-decoration: none;
   width: 100%;
 }
@@ -696,7 +689,7 @@ p {
   border-color: transparent #dee2e6 #dee2e6 #dee2e6;
 }
 .tab-content {
-  background-color: #bccbe9;
+  background-color: #8b9daa;
 }
 /*Accordion CSS*/
 
@@ -792,7 +785,9 @@ p {
 	}
 
 }
-
+.mainlist p{
+  text-align: left;
+}
 .infocolumns{
 	float: left;
 	width: 50%;
@@ -832,9 +827,9 @@ ol.olist {
   text-align:left;
 }
 
-.physmenu {
-	background-color: #eee;
-  color: #444;
+.mmenu {
+	background-color: #734B5E;
+  color: #f7f7ff;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -846,11 +841,11 @@ ol.olist {
   display: block;
 }
 
-#Info .active, .physmenu:hover {
-  background-color: #ccc;
+#Info .active, .mmenu:hover {
+  background-color: #905e76;
 }
 
-#Info .physmenu:after {
+#Info .mmenu:after {
   content: '\002B';
   color: #777;
   font-weight: bold;
@@ -864,7 +859,7 @@ ol.olist {
 
  .dropdownpanel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #828282;
   max-height: 0;
   overflow: hidden;
 transition: max-height 0.2s ease-out;

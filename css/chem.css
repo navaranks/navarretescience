@@ -116,10 +116,9 @@ a.topnav:hover {
 	line-height: 200px;
 	border: 1px dashed rgba(190, 196, 202, 0.9);
 }
-
-
-
-
+.body-section {
+  font-size: calc(14px + (18 - 10) * ((100vw - 300px) / (1600 - 300)))
+}
 
 
 @media only screen and (max-width: 780px) {
@@ -358,6 +357,7 @@ img{
 }
 .introimage{
 	width: 200%;
+
 }
 .introtext{
 	font-size: 20px;
@@ -372,21 +372,6 @@ img{
 	font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
 	text-align: center;
 	margin: 10px 0 0 0;
-}
-.classsplit {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.classsplit:hover {
-  background-color: #777;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -527,6 +512,7 @@ p {
   display: none;
   padding: 0px 30px 20px;
   background: #cdcdf3;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .panel {
@@ -794,16 +780,23 @@ p {
 	}
 
 }
-.mainlist p{
-  text-align: left;
+div.mainlist {
+  padding: 0;
 }
+.infotop {
+  padding: 0;
+}
+.infomid {
+  padding: 0;
+}
+
 .infocolumns{
 	float: left;
 	width: 50%;
 	padding: 10px;
 }
 
-.mainlist::after {
+.split::after {
 	content: "";
   display: table;
   clear: both;
@@ -836,7 +829,7 @@ ol.olist {
   text-align:left;
 }
 
-.chemmenu {
+.mmenu {
 	background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -850,11 +843,11 @@ ol.olist {
   display: block;
 }
 
-#Info .active, .chemmenu:hover {
+#Info .active, .mmenu:hover {
   background-color: #ccc;
 }
 
-#Info .chemmenu:after {
+#Info .mmenu:after {
   content: '\002B';
   color: #777;
   font-weight: bold;
