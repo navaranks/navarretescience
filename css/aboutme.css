@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
 body {
-	text-align: center;
 	background-color: #000;
 
 	font-family: 'Jost', sans-serif;
-
+	color: #000;
 	text-rendering: optimizelegibility;
 
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -18,11 +17,10 @@ body {
 	-ms-tap-highlight-color:rgba(0,0,0,0);
 	-ms-text-size-adjust: none;
 	-ms-font-smoothing: antialiased;
-	height: 100%
 }
 a {text-decoration: none;}
 
-.maincontainer {
+.container {
 	overflow: hidden;
 	background-color: #000;
 
@@ -38,10 +36,10 @@ a {text-decoration: none;}
 header {
 	height: 60px;
 	position: relative;
-	background-color: #f3f5f6;
+	background-color: #8D86C9;
 }
 header h1 {
-	color: #9aa6af;
+	color: #F7F7FF;
 	text-align: left;
 	font-size: 27px;
 	line-height: 60px;
@@ -67,26 +65,24 @@ header h1 {
 }
 .burger.open li {background-color: #d9dde1;}
 
-nav.slide {
+nav {
 	position: absolute;
 	top: 0;
 	right: 5px;
 }
-li.topnav {
+nav li {
 	float: left;
 
 	display: inline-block;
 }
-a.topnav {
+nav li a.navbar {
 	font-size: 11px;
-	color: #9aa6af;
+	color: #F7F7FF;
 	padding: 24px 15px;
 
 	display: block;
 }
-a.topnav:hover {
-	color: #000;
-}
+nav li a.navbar:hover {color: #000;}
 
 
 
@@ -99,20 +95,9 @@ a.topnav:hover {
 {padding: 20px;}
 
 .header-section {
-	background-color: #ffffff;}
-.body-section {background-color: #f4f5f6;}
-.footer-section {background-color: #dadee1;}
-.placefiller {
-	text-align: center;
-	font-size: 20px;
-	border: 1px dashed rgba(190, 196, 202, 0.5);
-}
-.header-section .placefiller {line-height: 300px;}
-.body-section .placefiller {line-height: 900px;}
-.footer-section .placefiller {
-	line-height: 200px;
-	border: 1px dashed rgba(190, 196, 202, 0.9);
-}
+	background-color: #8D86C9;}
+.body-section {background-color: #CAC4CE;}
+.footer-section {background-color: #D16666 ;}
 
 
 
@@ -146,27 +131,20 @@ header h1 {
 
 
 /*  Nav Drawer Layout  */
-.topnav {position: relative;}
+nav {position: relative;}
 
-nav.slide {
-	position: fixed;
-	top: 0;
-	right: 5px;
-}
-
-ul.topnav {
+nav ul {
 	height: 100%;
 	overflow-y: auto;
 }
-li.topnav {
+nav li {
 	display: block;
 	float: none;
 }
-a.topnav {
+nav li a.navbar {
 	padding: 22px 25px;
 	letter-spacing: 3px;
 	font-size: 14px;
-	text-align: left;
 }
 nav li a.logo {
 	display: none;
@@ -175,12 +153,12 @@ nav li a.active {
 	color: #fff;
 	background-color: #141e23;
 }
-nav li a:hover {
+nav li a.navbar:hover {
 	color: #fff;
 	background-color: #19252c;
 }
-nav li:first-child a.active,
-nav li:first-child a:hover
+nav li:first-child a.navbar.active,
+nav li:first-child a.navbar:hover
 {border-radius: 10px 0 0 0;}
 
 .header-section {margin-top: 60px;}
@@ -367,6 +345,7 @@ header.close,
 	border: 4px hidden;
 
 	overflow: hidden;
+	padding-bottom: 15px;
 }
 
 .intro div.polaroid1{
@@ -391,7 +370,8 @@ div.caption {
 	display: block;
 	line-height: 40px;
 	margin: 2px 0 0 0;
-	font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)))
+
+	font-size: 20px;
 
 }
 .row::after {
@@ -412,6 +392,7 @@ div.caption {
 	width: 100%;
 	border: 4px hidden;
 	overflow: hidden;
+	padding-bottom: 15px;
 }
 
 .middle div.polaroid2{
@@ -454,6 +435,7 @@ div.caption2 {
 	border: 4px hidden;
 
 	overflow: hidden;
+	padding-bottom: 15px;
 }
 
  div.polaroid3{
@@ -501,11 +483,13 @@ li.bullets{
 		display: block;
 		line-height: 40px;
 
-		font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)))
+		font-size: 20px;
 }
-
+a.contact{
+	color: #FAF2A1;
+}
 a.contact:hover {
-	color: red;
+	color: #F7A9A8;
 }
 @media screen and (max-width: 780px) {
   .intro div.polaroid1,
@@ -519,9 +503,9 @@ a.contact:hover {
   }
 	.intro,
 	.middle,
-	.aboutmelist, p{
+	.aboutmelist,
+	.end p{
 		margin-left: 0;
-
-
+		font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)))
 	}
 }

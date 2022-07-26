@@ -41,7 +41,7 @@ a {text-decoration: none;}
 header {
 	height: 60px;
 	position: relative;
-	background-color: #734B5E;
+	background-color: #006AA3;
 }
 header h1 {
 	color: #F7F7FF;
@@ -102,7 +102,7 @@ a.topnav:hover {
 {padding: 20px;}
 
 .header-section {
-	background-color: #F7F7FF;}
+	background-color: #006AA3;}
 .body-section {background-color: #F7F7FF;}
 .footer-section {background-color: #dadee1;}
 .placefiller {
@@ -356,7 +356,7 @@ img{
 	max-width: 100%;
 }
 .introimage{
-	width: 200%;
+	width: 80%;
 }
 .introtext{
 	font-size: 20px;
