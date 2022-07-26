@@ -41,10 +41,10 @@ a {text-decoration: none;}
 header {
 	height: 60px;
 	position: relative;
-	background-color: #f3f5f6;
+	background-color: #8F0043;
 }
 header h1 {
-	color: #9aa6af;
+	color: #F7F7FF;
 	text-align: left;
 	font-size: 27px;
 	line-height: 60px;
@@ -82,7 +82,7 @@ li.topnav {
 }
 a.topnav {
 	font-size: 11px;
-	color: #9aa6af;
+	color: #F7F7FF;
 	padding: 24px 15px;
 
 	display: block;
@@ -102,7 +102,7 @@ a.topnav:hover {
 {padding: 20px;}
 
 .header-section {
-	background-color: #ffffff;}
+	background-color: #8F0043;}
 .body-section {background-color: #f4f5f6;}
 .footer-section {background-color: #dadee1;}
 .placefiller {
@@ -356,7 +356,7 @@ img{
 	max-width: 100%;
 }
 .introimage{
-	width: 200%;
+	width: 80%;
 
 }
 .introtext{
@@ -410,7 +410,7 @@ button {
   border: none;
   padding: 10px;
   background-color: white;
-  color: #232c3d;
+  color: #000;
   font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
@@ -429,11 +429,11 @@ button:hover {
 }
 
 button.activetab {
-  background-color: #BCCBE9;
+  background-color: #F2C078;
 }
 
 .subcontent.activetab {
-  background-color: #BCCBE9;
+  background-color: #F2C078;
 }
 
 p {
@@ -466,14 +466,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #BCCBE9;
+  background: #F2C078;
 
 }
 #Regular .tabss {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #BCCBE9;
+  background: #F2C078;
   flex-direction: row-reverse;
 }
 .input {
@@ -500,7 +500,7 @@ p {
   z-index: 1;
 }
 .input:checked + .label {
-  background: #cdcdf3;
+  background: #F76F8E;
   color: #000;
 }
 @media (min-width: 768px) {
@@ -511,7 +511,7 @@ p {
 .panel {
   display: none;
   padding: 0px 30px 20px;
-  background: #cdcdf3;
+  background: #F76F8E;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -541,7 +541,7 @@ p {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background: #bccbe9;
+  background: #F2C078;
   background-clip: border-box;
   border: 1px solid transparent;
 }
@@ -640,7 +640,7 @@ p {
 }
 .nav-link.active {
   color: #000;
-  background-color: #bccbe9;
+  background-color: #F2C078;
   border-color: #dee2e6 #dee2e6 transparent #dee2e6;
 }
 .nav-tabs .dropdown-menu {
@@ -683,7 +683,7 @@ p {
   border-color: transparent #dee2e6 #dee2e6 #dee2e6;
 }
 .tab-content {
-  background-color: #bccbe9;
+  background-color: #F2C078;
 }
 /*Accordion CSS*/
 
