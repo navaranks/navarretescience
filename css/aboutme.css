@@ -89,7 +89,7 @@ nav li a.navbar:hover {color: #000;}
 
 /*  Removable CSS  */
 
-.header-section,
+
 .body-section,
 .footer-section
 {padding: 20px;}
@@ -98,10 +98,6 @@ nav li a.navbar:hover {color: #000;}
 	background-color: #8D86C9;}
 .body-section {background-color: #CAC4CE;}
 .footer-section {background-color: #D16666 ;}
-
-
-
-
 
 
 @media only screen and (max-width: 780px) {

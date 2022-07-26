@@ -96,7 +96,7 @@ a.topnav:hover {
 
 /*  Removable CSS  */
 
-.header-section,
+
 .body-section,
 .footer-section
 {padding: 20px;}
@@ -354,6 +354,7 @@ header.close,
 
 img{
 	max-width: 100%;
+
 }
 .introimage{
 	width: 80%;
@@ -398,6 +399,9 @@ img{
   	border-radius: 10px;
   	box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
 	}
+  .introtext {
+    padding-left: 0px;
+  }
 }
 
 .buttonWrapper {
@@ -438,7 +442,7 @@ button.activetab {
 
 p {
   text-align: left;
-  padding: 10px;
+
 }
 
 .subcontent {
@@ -780,15 +784,7 @@ p {
 	}
 
 }
-div.mainlist {
-  padding: 0;
-}
-.infotop {
-  padding: 0;
-}
-.infomid {
-  padding: 0;
-}
+
 
 .infocolumns{
 	float: left;
@@ -796,7 +792,7 @@ div.mainlist {
 	padding: 10px;
 }
 
-.split::after {
+.mainlist:after {
 	content: "";
   display: table;
   clear: both;
@@ -858,6 +854,12 @@ ol.olist {
 #Info .active:after {
   content: "\2212";
 }
+.grades {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
  .dropdownpanel {
   padding: 0 18px;
@@ -874,23 +876,24 @@ transition: max-height 0.2s ease-out;
 
 .doccolumns{
 	float: left;
-	width: 45%;
+	width: 50%;
 	padding: 10px;
 }
 .centerimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 50%;
 }
 
-.sublist::after {
+.sublist:after {
 	content: "";
   display: table;
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  .doccolumns {
+  .doccolumns,
+  .grades {
     width: 100%;
   }
 }

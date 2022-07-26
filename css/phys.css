@@ -96,7 +96,7 @@ a.topnav:hover {
 
 /*  Removable CSS  */
 
-.header-section,
+
 .body-section,
 .footer-section
 {padding: 20px;}
@@ -116,10 +116,9 @@ a.topnav:hover {
 	line-height: 200px;
 	border: 1px dashed rgba(190, 196, 202, 0.9);
 }
-
-
-
-
+.body-section {
+  font-size: calc(14px + (18 - 10) * ((100vw - 300px) / (1600 - 300)))
+}
 
 
 @media only screen and (max-width: 780px) {
@@ -438,7 +437,7 @@ button.activetab {
 
 p {
   text-align: left;
-  padding: 10px;
+
 }
 
 .subcontent {
@@ -794,7 +793,7 @@ p {
 	padding: 10px;
 }
 
-.mainlist::after {
+.mainlist:after {
 	content: "";
   display: table;
   clear: both;
@@ -872,23 +871,25 @@ transition: max-height 0.2s ease-out;
 
 .doccolumns{
 	float: left;
-	width: 45%;
+	width: 50%;
 	padding: 10px;
 }
-.centerimg {
+.centerimg,
+.grades {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 50%;
 }
 
-.sublist::after {
+.sublist:after {
 	content: "";
   display: table;
   clear: both;
 }
 @media screen and (max-width: 768px) {
-  .doccolumns {
+  .doccolumns,
+  .grades {
     width: 100%;
   }
 }
