@@ -429,15 +429,15 @@ button {
   border-top-left-radius: 0px;
 }
 button:hover {
-  background-color: #d5e3ff;
+  background-color: #ffe7d5;
 }
 
 button.activetab {
-  background-color: #F2C078;
+  background-color: #d5e3ff;
 }
 
 .subcontent.activetab {
-  background-color: #F2C078;
+  background-color: #d5e3ff;
 }
 
 p {
@@ -470,14 +470,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #F2C078;
+  background: #d5e3ff;
 
 }
 #Regular .tabss {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #F2C078;
+  background: #d5e3ff;
   flex-direction: row-reverse;
 }
 .input {
@@ -504,7 +504,7 @@ p {
   z-index: 1;
 }
 .input:checked + .label {
-  background: #F76F8E;
+  background: #92aee6;
   color: #000;
 }
 @media (min-width: 768px) {
@@ -515,7 +515,7 @@ p {
 .panel {
   display: none;
   padding: 0px 30px 20px;
-  background: #F76F8E;
+  background: #92aee6;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -545,7 +545,7 @@ p {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background: #F2C078;
+  background: #f4f5f6;
   background-clip: border-box;
   border: 1px solid transparent;
 }
@@ -644,7 +644,7 @@ p {
 }
 .nav-link.active {
   color: #000;
-  background-color: #F2C078;
+  background-color: #f4f5f6;
   border-color: #dee2e6 #dee2e6 transparent #dee2e6;
 }
 .nav-tabs .dropdown-menu {
@@ -682,12 +682,12 @@ p {
 }
 .tab-content > .active {
   display: block;
-  border: 1px solid transparent;
+  
 
   border-color: transparent #dee2e6 #dee2e6 #dee2e6;
 }
 .tab-content {
-  background-color: #F2C078;
+  background-color: #f4f5f6;
 }
 /*Accordion CSS*/
 
