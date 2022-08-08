@@ -408,12 +408,33 @@ img{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 button {
+
+  font-family: 'Jost', sans-serif;
+  border: none;
+  padding: 5px;
+  background-color: white;
+  color: #F7F7FF;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button.left {
   letter-spacing: 3px;
   border: none;
   padding: 10px;
-  background-color: white;
+  background-color: #b3ccff;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button.right {
+  letter-spacing: 3px;
+  border: none;
+  padding: 10px;
+  background-color: #ffd4b3;
   color: #000;
   font-size: 18px;
   cursor: pointer;
@@ -428,16 +449,27 @@ button {
   border-top-right-radius: 10px;
   border-top-left-radius: 0px;
 }
-button:hover {
+.left:hover {
+  background-color: #d5e3ff;
+}
+
+.left.activetab {
+  background-color: #d5e3ff;
+}
+
+.right:hover {
   background-color: #ffe7d5;
 }
 
-button.activetab {
-  background-color: #d5e3ff;
+.right.activetab {
+  background-color: #ffe7d5;
 }
 
-.subcontent.activetab {
+.subcontent.activetab[id='Honors'] {
   background-color: #d5e3ff;
+}
+.subcontent.activetab[id='Regular'] {
+  background-color: #ffe7d5;
 }
 
 p {
@@ -458,10 +490,9 @@ p {
   .buttonWrapper{
     grid-template-columns:1fr
   }
-
-  .left,.right [id='main']{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  .tab-button.activetab{
+    order:2;
+    transition-duration: 0s;
   }
 }
 
@@ -477,7 +508,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  background: #d5e3ff;
+  background: #ffe7d5;
   flex-direction: row-reverse;
 }
 .input {
@@ -487,7 +518,7 @@ p {
 .label {
   width: 100%;
   padding: 20px 30px;
-  background: #8b9daa;
+  background: #3b6064;
   cursor: pointer;
   font-weight: bold;
   font-size: 18px;
@@ -495,7 +526,7 @@ p {
   transition: background 0.1s, color 0.1s;
 }
 .label:hover {
-  background: #b8c3cb;
+  background: #599298;
 }
 .label:active {
   background: #cdcdf3;
@@ -503,8 +534,12 @@ p {
 .input:focus + .label {
   z-index: 1;
 }
-.input:checked + .label {
+.input[name="Htabs"]:checked + .label {
   background: #92aee6;
+  color: #000;
+}
+.input[name="Rtabs"]:checked + .label {
+  background: #e6b692;
   color: #000;
 }
 @media (min-width: 768px) {
@@ -512,15 +547,21 @@ p {
     width: auto;
   }
 }
-.panel {
+.panel[id="Honors"] {
   display: none;
   padding: 0px 30px 20px;
   background: #92aee6;
   width: 100%;
 }
+.panel[id="Regular"]{
+  display: none;
+  padding: 0px 30px 20px;
+  background: #e6b692;
+  width: 100%;
+}
 @media (min-width: 768px) {
   .panel {
-    order: 99;
+    order: 5;
   }
 }
 .input:checked + .label + .panel {
@@ -659,7 +700,7 @@ p {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #7B8AA9;
+  background-color: #31767e;
   text-decoration: none;
   width: 100%;
 }
@@ -682,7 +723,7 @@ p {
 }
 .tab-content > .active {
   display: block;
-  
+
 
   border-color: transparent #dee2e6 #dee2e6 #dee2e6;
 }
@@ -744,6 +785,17 @@ p {
   color: #fff;
 	 background-color: #343a40;
 	 border-color: #454d55;
+}
+.card-link {
+  text-decoration: none;
+  color: #000;
+}
+.table a{
+  color: #AD2A1A;
+}
+.table a:hover {
+  color: #3b6064;
+  text-decoration: underline wavy #3b6064 1px;
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
 
