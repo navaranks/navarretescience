@@ -30,6 +30,7 @@ a {text-decoration: none;}
 	background-color: #000;
 
 /*  Prevents Flickering  */
+  backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
@@ -76,7 +77,7 @@ nav.slide {
 	right: 5px;
 }
 li.topnav {
-	float: left;
+	/*float: left;*/
 
 	display: inline-block;
 }
