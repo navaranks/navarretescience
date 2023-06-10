@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
   	<title>Navarrete Science</title>
-  	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   	<link rel="icon" href="images/icon.png" type="image/png" sizes="32x32">
     <script src="csi.js"></script>
@@ -15,20 +15,29 @@
       </div>
       <div class="intro">
         <h1>Welcome to the Navarrete Science home page</h1>
-        <h3>Select an icon to learn more about each class or the teacher!</h3>
+        <!--<h3>Select an icon to learn more about each class or the teacher!</h3>-->
         <hr >
       </div>
+      <img id="myImg" src="images/yearbook.png" alt="Thank you for a memorable year!" style="width:100%">
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
+        <hr >
+        
       <div class="navtiles">
+        <h1>Enjoy the playslists below!</h1>
         <table class="icontable">
           <tr>
             <th>
-              <a href="chemistry/chemhome.html">
-                <img src="images/chemoptimized.gif" alt="image1" class="tableimages">
+              <a href="https://open.spotify.com/playlist/2i6hICHOiNYvysQDL3YRNN?si=d43b81d9e7604b60&pt=2afac1a36632a28ffa9c08fe4ba78082">
+                <img src="images/Nights.png" alt="image1" class="tableimages">
               </a>
             </th>
             <th>
-              <a href="physics/physicshome.html">
-                <img src="images/physoptimized.gif" alt="image1" class="tableimages">
+              <a href="https://open.spotify.com/playlist/4sGnWgBTfAT28S7QoXmOuZ?si=37aef5e963904415&pt=e336e81bfafb5749d45433bf7dbe34db">
+                <img src="images/lat.png" alt="image1" class="tableimages">
               </a>
             </th>
             <th>
@@ -47,6 +56,21 @@
         </h3>
       </footer>
     </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
 
   </body>
 </html>
